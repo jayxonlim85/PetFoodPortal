@@ -1,0 +1,17 @@
+#ignore VS, packages, bin and obj folders
+PetFoodPortal/.vs/
+PetFoodPortal/packages/
+PetFoodPortal/PetFoodPortal/bin
+PetFoodPortal/PetFoodPortal/obj
+#ignore content folder but not some css files
+PetFoodPortal/PetFoodPortal/Content/
+!PetFoodPortal/PetFoodPortal/Content/themes/
+!PetFoodPortal/PetFoodPortal/Content/creative.css
+!PetFoodPortal/PetFoodPortal/Content/creative.min.css
+!PetFoodPortal/PetFoodPortal/Content/magnific-popup.css
+!PetFoodPortal/PetFoodPortal/Content/Site.css
+#ignore fonts folder
+PetFoodPortal/PetFoodPortal/Fonts/
+#ignore test proj
+PetFoodPortal/PetFoodPortal.Tests/bin/
+PetFoodPortal/PetFoodPortal.Tests/obj/
