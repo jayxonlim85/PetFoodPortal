@@ -12,7 +12,7 @@ namespace PetFoodPortal.Controllers
         {
             ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
 
-            return View();
+            return View("Index", "~/Views/Shared/_LayoutMain.cshtml");
         }
 
         public ActionResult About()

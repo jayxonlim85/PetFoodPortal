@@ -18,6 +18,12 @@ namespace PetFoodPortal
                         "~/Scripts/jquery.unobtrusive*",
                         "~/Scripts/jquery.validate*"));
 
+            bundles.Add(new ScriptBundle("~/bundles/angular").Include(
+                      "~/Scripts/angular.js", "~/Scripts/ng-map.js"));
+
+            //bundles.Add(new ScriptBundle("~/bundles/ngmap").Include(
+            //        "~/Scripts/ng-map.min.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/index").Include(
                 "~/Scripts/bootstrap.js",
                 "~/Scripts/scrollreveal.js",

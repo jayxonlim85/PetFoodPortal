@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Location";
+}
+
+<div id="mapcontainer" class="container"  ng-app='myApp' ng-controller='myCtrl'>
+    <div id="map123"></div>
+
+    <div class="row">
+        <div class="col-sm-9">
+            <ng-map zoom="14" center="[43.6650000, -79.4103000]"></ng-map>
+        </div>
+
+        <div class="col-sm-3">
+            <ul class="list-group">
+                <li class="list-group-item"><a href="#" style="text-decoration:none;" ng-click="setMarker(43.6600000,-79.4103000)">Gombak</a></li>
+                <li class="list-group-item"><a href="#" style="text-decoration:none;" ng-click="setMarker(43.669996, -79.421032)">Selayang</a></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+@section scripts
+{
+    @Scripts.Render("~/bundles/index")
+    @Scripts.Render("~/bundles/angular")
+    <script src="http://maps.google.com/maps/api/js?key=AIzaSyBnHVGlEHdVczbH5yJ1JdTHno50EIDzYlY"></script>
+    <script src="~/Scripts/location.js"></script>
+}
