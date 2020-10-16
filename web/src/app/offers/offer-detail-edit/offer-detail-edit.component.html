@@ -1,0 +1,83 @@
+<p>offer-detail-edit works!</p>
+
+<form #offerForm="ngForm" (ngSubmit)="editOffer(offerForm)">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">Edit Shipment</h3>
+      </div>
+      <div class="panel-body">
+  
+        <div class="form-group">
+          <label for="shipmentNumber">Shipment Number : </label>
+          <input id="shipmentNumber" type="text" class="form-control"
+                 name="shipmentNumber" [(ngModel)]="shipmentNumber">
+        </div>
+  
+        <div class="form-group">
+          <label for="price">Price : </label>
+          <input id="price" type="text" class="form-control"
+                 name="price" [(ngModel)]="price">
+        </div>
+
+        <div class="form-group">
+            <label for="vehicleSize">Vehicle Size : </label>
+            <input id="vehicleSize" type="text" class="form-control"
+                   name="vehicleSize" [(ngModel)]="vehicleSize">
+          </div>
+
+          <div class="form-group">
+            <label for="vehicleBuildUp">Vehicle Build Up : </label>
+            <input id="vehicleBuildUp" type="text" class="form-control"
+                   name="vehicleBuildUp" [(ngModel)]="vehicleBuildUp">
+          </div>
+
+          <div class="form-group">
+            <label for="pickUp">Pick Up : </label>
+            <input id="pickUp" type="text" class="form-control"
+                   name="pickUp" [(ngModel)]="pickUp">
+          </div>
+
+          <div class="form-group">
+            <label for="pickUpTime">Pick Up Time : </label>
+            <input id="pickUpTime" type="text" class="form-control"
+                   name="pickUpTime" [(ngModel)]="pickUpTime">
+          </div>
+
+          <div class="form-group">
+            <label for="drop">Drop : </label>
+            <input id="drop" type="text" class="form-control"
+                   name="drop" [(ngModel)]="drop">
+          </div>
+
+          <div class="form-group">
+            <label for="dropTime">Drop Time : </label>
+            <input id="dropTime" type="text" class="form-control"
+                   name="dropTime" [(ngModel)]="dropTime">
+          </div>
+
+          <div class="form-group">
+            <label for="load1">Load 1 : </label>
+            <input id="load1" type="text" class="form-control"
+                   name="load1" [(ngModel)]="load1">
+          </div>
+
+          <div class="form-group">
+            <label for="load2">Load 2 : </label>
+            <input id="load2" type="text" class="form-control"
+                   name="load2" [(ngModel)]="load2">
+          </div>
+
+          <div class="form-group">
+            <label for="load3">Load 3 : </label>
+            <input id="load3" type="text" class="form-control"
+                   name="load3" [(ngModel)]="load3">
+          </div>
+  
+      </div>
+      <div class="panel-footer">
+        <button class="btn btn-primary" type="submit">Edit</button>
+      </div>
+    </div>
+  </form>
+
+  {{offerForm.value | json}}

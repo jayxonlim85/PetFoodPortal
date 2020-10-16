@@ -1,0 +1,83 @@
+<p>offer-detail-create works!</p>
+
+<form #offer="ngForm" (ngSubmit)="saveOffer(offer)">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">Create Shipment</h3>
+      </div>
+      <div class="panel-body">
+  
+        <div class="form-group">
+          <label for="shipmentNumber">Shipment Number : </label>
+          <input required id="shipmentNumber" type="text" class="form-control"
+                 name="shipmentNumber" [(ngModel)]="offer.shipmentNumber">
+        </div>
+  
+        <div class="form-group">
+          <label for="price">Price : </label>
+          <input required id="price" type="text" class="form-control"
+                 name="price" [(ngModel)]="offer.price">
+        </div>
+
+        <div class="form-group">
+            <label for="vehicleSize">Vehicle Size : </label>
+            <input required id="vehicleSize" type="text" class="form-control"
+                   name="vehicleSize" [(ngModel)]="offer.vehicleSize">
+          </div>
+
+          <div class="form-group">
+            <label for="vehicleBuildUp">Vehicle Build Up : </label>
+            <input required id="vehicleBuildUp" type="text" class="form-control"
+                   name="vehicleBuildUp" [(ngModel)]="offer.vehicleBuildUp">
+          </div>
+
+          <div class="form-group">
+            <label for="pickUp">Pick Up : </label>
+            <input required id="pickUp" type="text" class="form-control"
+                   name="pickUp" [(ngModel)]="offer.pickupLocationName">
+          </div>
+
+          <div class="form-group">
+            <label for="pickUpTime">Pick Up Time : </label>
+            <input required id="pickUpTime" type="text" class="form-control"
+                   name="pickUpTime" [(ngModel)]="offer.pickupDateTime">
+          </div>
+
+          <div class="form-group">
+            <label for="drop">Drop : </label>
+            <input required id="drop" type="text" class="form-control"
+                   name="drop" [(ngModel)]="offer.deliveryLocationName">
+          </div>
+
+          <div class="form-group">
+            <label for="dropTime">Drop Time : </label>
+            <input required id="dropTime" type="text" class="form-control"
+                   name="dropTime" [(ngModel)]="offer.deliveryDateTime">
+          </div>
+
+          <div class="form-group">
+            <label for="load1">Load 1 : </label>
+            <input id="load1" type="text" class="form-control"
+                   name="load1" [(ngModel)]="offer.loadDetail1">
+          </div>
+
+          <div class="form-group">
+            <label for="load2">Load 2 : </label>
+            <input id="load2" type="text" class="form-control"
+                   name="load2" [(ngModel)]="offer.loadDetail2">
+          </div>
+
+          <div class="form-group">
+            <label for="load3">Load 3 : </label>
+            <input id="load3" type="text" class="form-control"
+                   name="load3" [(ngModel)]="offer.loadDetail3">
+          </div>
+  
+      </div>
+      <div class="panel-footer">
+        <button class="btn btn-primary" type="submit">Save</button>
+      </div>
+    </div>
+  </form>
+
+  {{offer.value | json}}
